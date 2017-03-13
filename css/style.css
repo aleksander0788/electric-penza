@@ -23,23 +23,69 @@ li:last-child {
 	display: block;
 	margin: 5px 0 10px 0;
 }
-.menu-top {
-	margin-top: 21px;
-}
-.navbar {
-	display: inline-block;
-	margin: 0 15px;
+
+header {
+	position: fixed;
+	box-shadow: 0px 4px 6px -4px #C4C4C4;
+	background: #fff;
+	opacity: 0.97;
+	width: 100%;
+	z-index: 1;
 }
 
-.navbar a {
+/* ---navigation---*/
+
+.navigation {
+	margin-top: 21px;
+	z-index: 5;
+}
+.nav-item {
+	display: block;
+	position: relative;
+	float: left;
+	padding: 0 15px;
+	padding-bottom: 24px;
+}
+
+.nav-item a {
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: 600;
 	color: black;
 }
-.navbar a:hover {
+.nav-item:hover.nav-item > a,
+.dropping-menu .list-item:hover a {
 	color: #ff0000;
 }
+
+/* -- DropDown -- */
+
+.dropping-menu {
+	display: none;
+	position: absolute;
+	top: 41px;
+	left: 0;
+	background: #FcFcFc;
+	padding: 0 0 10px 18px;
+	z-index: 4;
+	box-shadow: 0px 6px 8px -5px #C4C4C4;
+}
+.dropping-menu .list-item {
+	position: relative;
+	min-width: 180px;
+	padding: 20px 13px 5px 0;
+}
+
+.nav-item:hover > .dropping-menu {
+	display: inherit;
+}
+
+
+
+
+
+
+
 .phone-number {
 	font-size: 22px;
 	margin-top: 13px;
@@ -162,14 +208,7 @@ button:hover {
 	margin: 30px 0 23px 0;
 }
 /*ФОРМА ОБРАТНОЙ ЗВЯЗИ*/
-header {
-	position: fixed;
-	box-shadow: 0px 4px 6px -5px #C7C7C7;
-	background-color: white;
-	width: 100%;
-	opacity: 0.95;
-	z-index: 1;
-}
+
 .block-1 {
 	padding-top: 20px;
 	font: #fff;
