@@ -656,13 +656,22 @@ footer a {
 /* TABLES */
 table {
 	font-size: 18px;
+	
 }
+table td,
+table th  {
+	border: 2px #ccc solid;
+	padding: 4px;
+	vertical-align: middle;
+}
+
 
 .table__costs__header {
 	text-align: left;
 }
 .table__col-4__row-n > :first-child {
 	color: red;
+	padding: 0 8px 0;
 }
 .table__col-4__row-n > :nth-child(2) {
 	color: blue;
