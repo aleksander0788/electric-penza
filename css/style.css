@@ -651,3 +651,25 @@ footer a {
 .none {
 	display: none;
 }*/
+
+
+/* TABLES */
+table {
+	font-size: 18px;
+}
+
+.table__costs__header {
+	text-align: left;
+}
+.table__col-4__row-n > :first-child {
+	color: red;
+}
+.table__col-4__row-n > :nth-child(2) {
+	color: blue;
+}
+.table__col-4__row-n > :nth-child(3) {
+	color: grey;
+}
+.table__col-4__row-n > :nth-child(4) {
+	color: brown;
+}
