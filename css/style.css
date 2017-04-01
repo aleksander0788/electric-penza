@@ -664,21 +664,29 @@ table th  {
 	padding: 4px;
 	vertical-align: middle;
 }
+.table__prices {
+	margin: 0 0 50px;
+	width: 100%;
+}
 
 
 .table__costs__header {
 	text-align: left;
 }
-.table__col-4__row-n > :first-child {
-	color: red;
+.table__col-4__row-n > :first-child,
+.table__col-3__row-n > :first-child {
+	/*color: red;*/
 	padding: 0 8px 0;
+	text-align: center;
 }
-.table__col-4__row-n > :nth-child(2) {
-	color: blue;
+.table__col-4__row-n > :nth-child(2),
+.table__col-3__row-n > :nth-child(2) {
+	/*color: blue;*/
 }
-.table__col-4__row-n > :nth-child(3) {
-	color: grey;
+.table__col-4__row-n > :nth-child(3),
+.table__col-3__row-n > :nth-child(3) {
+	/*color: grey;*/
 }
 .table__col-4__row-n > :nth-child(4) {
-	color: brown;
+	/*color: brown;*/
 }
