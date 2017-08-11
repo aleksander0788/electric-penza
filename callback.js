@@ -9,17 +9,17 @@ $(document).ready(function () {
 
 	// Функция отправки email-сообщения: Обратный звонок
 	function sendCallbackEmail(mailForm) {
-	$.ajax({
-	type: 'POST',
-	// beforeSend:,
-	data: mailForm.serialize(),
-	url: mailForm.attr('action'),
-	dataType: 'html',
-	success: function(status) {
-	alert("Ваше письмо отправлено!");
+		$.ajax({
+		type: 'POST',
+		// beforeSend:,
+		data: mailForm.serialize(),
+		url: mailForm.attr('action'),
+		dataType: 'html',
+		success: function(status) {
+		alert("Ваше письмо отправлено!");
+		}
+		});
 	}
-	});
-	}		
 });
 
 

@@ -23,69 +23,23 @@ li:last-child {
 	display: block;
 	margin: 5px 0 10px 0;
 }
-
-header {
-	position: fixed;
-	box-shadow: 0px 4px 6px -4px #C4C4C4;
-	background: #fff;
-	opacity: 0.97;
-	width: 100%;
-	z-index: 1;
-}
-
-/* ---navigation---*/
-
-.navigation {
+.menu-top {
 	margin-top: 21px;
-	z-index: 5;
 }
-.nav-item {
-	display: block;
-	position: relative;
-	float: left;
-	padding: 0 15px;
-	padding-bottom: 24px;
+.navbar {
+	display: inline-block;
+	margin: 0 15px;
 }
 
-.nav-item a {
+.navbar a {
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: 600;
 	color: black;
 }
-.nav-item:hover.nav-item > a,
-.dropping-menu .list-item:hover a {
+.navbar a:hover {
 	color: #ff0000;
 }
-
-/* -- DropDown -- */
-
-.dropping-menu {
-	display: none;
-	position: absolute;
-	top: 41px;
-	left: 0;
-	background: #FcFcFc;
-	padding: 0 0 10px 18px;
-	z-index: 4;
-	box-shadow: 0px 6px 8px -5px #C4C4C4;
-}
-.dropping-menu .list-item {
-	position: relative;
-	min-width: 180px;
-	padding: 20px 13px 5px 0;
-}
-
-.nav-item:hover > .dropping-menu {
-	display: inherit;
-}
-
-
-
-
-
-
-
 .phone-number {
 	font-size: 22px;
 	margin-top: 13px;
@@ -208,7 +162,14 @@ button:hover {
 	margin: 30px 0 23px 0;
 }
 /*ФОРМА ОБРАТНОЙ ЗВЯЗИ*/
-
+header {
+	position: fixed;
+	box-shadow: 0px 4px 6px -5px #C7C7C7;
+	background-color: white;
+	width: 100%;
+	opacity: 0.95;
+	z-index: 1;
+}
 .block-1 {
 	padding-top: 20px;
 	font: #fff;
@@ -651,42 +612,3 @@ footer a {
 .none {
 	display: none;
 }*/
-
-
-/* TABLES */
-table {
-	font-size: 18px;
-	
-}
-table td,
-table th  {
-	border: 2px #ccc solid;
-	padding: 4px;
-	vertical-align: middle;
-}
-.table__prices {
-	margin: 0 0 50px;
-	width: 100%;
-}
-
-
-.table__costs__header {
-	text-align: left;
-}
-.table__col-4__row-n > :first-child,
-.table__col-3__row-n > :first-child {
-	/*color: red;*/
-	padding: 0 8px 0;
-	text-align: center;
-}
-.table__col-4__row-n > :nth-child(2),
-.table__col-3__row-n > :nth-child(2) {
-	/*color: blue;*/
-}
-.table__col-4__row-n > :nth-child(3),
-.table__col-3__row-n > :nth-child(3) {
-	/*color: grey;*/
-}
-.table__col-4__row-n > :nth-child(4) {
-	/*color: brown;*/
-}
