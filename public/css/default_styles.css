@@ -1,0 +1,38 @@
+.content {
+	padding-top: 40px;
+	padding-bottom: 60px;
+	width: 800px;
+	margin: auto;
+}
+body.pages {
+	padding-top: 74px;
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 15px;
+}
+h2 {
+	font-size: 32px;
+	margin-top: 20px;
+	margin-bottom: -5px;
+}
+h3 {
+	font-size: 26px;
+}
+h4 {
+	font-size: 20px;
+	margin-top: 10px;
+}
+.content ol,
+.content ul {
+	margin-left: 20px;
+	margin-bottom: 15px;
+}
+p,
+ol li,
+ul li {
+	font-size: 18px;
+	line-height: 1.1;
+	margin-top: 10px;
+}
