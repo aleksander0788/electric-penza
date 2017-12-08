@@ -21,7 +21,7 @@ li:last-child {
 .logo-top {
 	width: 130px;
 	display: block;
-	margin: 5px 0 10px 0;
+	margin: 12px 0 10px 0;
 }
 
 header {
@@ -212,7 +212,7 @@ button:hover {
 
 .block-1 {
 	padding-top: 20px;
-	margin-top: 11px;
+	margin-top: 7px;
 	font: #fff;
 	background: url(../images/1st-block-bg.png) no-repeat;
 	background-size: contain;
@@ -417,7 +417,7 @@ footer {
 	width: 100%;
 	background-image: url(../images/footer-bg.jpg);
 	background-size: cover;
-	background-position:  0 -25px;
+	background-position:  0 0;
 }
 footer h1 {
 	font-size: 80px;
@@ -592,7 +592,7 @@ footer a {
 .callback-form-modal button {
 	font-size: 22px;
 }
-.price {
+.pricelist {
 	width: 530px;
 	text-align: center;
 	margin: 15px auto 55px auto;
@@ -696,12 +696,13 @@ table th  {
 	.carousel {
 		// margin-top: 63px;
 		.slick-slide {
+			text-align: center;
+
 
 			img {
-				width: 100%;
 				height: auto;
-				// min-height: 450px;
-				max-height: 600px;
+				width: 100%;
+				display: inline-block;
 			}
 		}
 		.slick-arrow {
@@ -716,5 +717,17 @@ table th  {
 		}
 		.slick-next {
 			right: 0;
+		}
+	}
+
+	.no-work {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 75vh;
+		h2 {
+			font-size: 32px;
+			text-transform: uppercase;
+			font-weight: 400;
 		}
 	}

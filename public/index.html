@@ -5,16 +5,13 @@
 		<meta name='yandex-verification' content='4e26973d0c05f17f' />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="jquery-ui.min.js"></script>
-		<script src="callback.js"></script>
+		<script src="js/callback.js"></script>
 		<script src="js/slick.min.js"></script>
 		<script src="js/main.js"></script>
-		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/bootstrap.css" type="text/css">
 		<link rel="stylesheet" href="css/jquery-ui.css">
-		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="css/default_styles.css">
-		<link rel="icon" href="http://electric-penza.ru/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
 		<title>Электромонтажные работы в городе Пенза</title>
 		<!-- Google analytics counter -->
 		<script>
@@ -41,7 +38,7 @@
 					<nav class="navigation">
 						<ul>
 							<li class="nav-item">
-								<a href="/">Главная</a>
+								<a href="">Главная</a>
 								<ul class="dropping-menu">
 									<li class="list-item">
 										<a href="#services">Наши услуги</a>
@@ -56,41 +53,41 @@
 										<a href="#call-master">Вызов мастера</a>
 									</li>
 									<li class="list-item">
-										<a href="">Этапы работ (ссылку)</a>
+										<a href="#stages-works">Этапы работ</a>
 									</li>
 									<li class="list-item">
-										<a href="">Контакты</a>
+										<a href="#contacts">Контакты</a>
 									</li>
 								</ul>
 							</li>
 							<li class="nav-item">
-								<a href="/pages/services.html">Услуги</a>
+								<a name="#">Услуги</a>
 								<ul class="dropping-menu">
 									<li class="list-item">
-										<a href="#services">Замена электросчетчика</a>
+										<a href="/services/measuring">Замена электросчетчика</a>
 									</li>
 									<li class="list-item">
-										<a href="#prices">Электроснабжение объекта</a>
+										<a href="/services/technological-connection">Технологическое присоединение</a>
 									</li>
 									<li class="list-item">
-										<a href="#advantages">Монтаж электрощитов</a>
+										<a href="/services/shield">Монтаж электрощитов</a>
 									</li>
 									<li class="list-item">
-										<a href="#call-master">Проводка под ключ</a>
+										<a href="/services/wiring">Проводка под ключ</a>
 									</li>
 									<li class="list-item">
-										<a href="#call-master1">Проектирование</a>
+										<a href="/services/project">Проектирование</a>
 									</li>
 								</ul>
 							</li>
 							<li class="nav-item">
-								<a href="#">Цены</a>
+								<a href="/prices">Цены</a>
 							</li>
 							<li class="nav-item">
-								<a href="">Преимущества</a>
+								<a href="/our-works">Наши работы</a>
 							</li>
 							<li class="nav-item">
-								<a href="#contacts">Контакты</a>
+								<a href="/contacts">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -245,6 +242,7 @@
 				</div>
 				<a name="call-master"></a>
 			</div>
+			<a name="stages-works"></a>
 		</div>
 		<div class="block-6 even-block block-width">
 			<div>
@@ -288,14 +286,12 @@
 						});
 					});
 				});
-				$(function()
-				{
-					$('.ui-front').click(function()
-					{
-						console.log('прив');
-						// $('#ui-dialog').dialog('close');
-					});
-				})();
+				// $(function(){
+				// 	$('.ui-front').click (function(){
+				// 	console.log('прив');
+				// 	// $('#ui-dialog').dialog('close');
+				// });
+				// })();
 
 			</script>
 			<div class="container no-padding">
@@ -430,7 +426,7 @@
 						</ul>
 						<div class="vk">
 							<a href="https://vk.com/electric_penza">
-								<img src="/images/vk-logo.png" alt="VK-logo">
+								<img src="images/vk-logo.png" alt="VK-logo">
 							</a>
 							<a href="https://vk.com/electric_penza">мы в Вконтакте</a>
 						</div>

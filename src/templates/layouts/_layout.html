@@ -6,16 +6,14 @@
   <meta name='yandex-verification' content='4e26973d0c05f17f' />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="jquery-ui.min.js"></script>
-  <script src="callback.js"></script>
+  <script src="{{up_dir}}js/callback.js"></script>
   <script src="{{up_dir}}js/slick.min.js"></script>
   <script src="{{up_dir}}js/main.js"></script>
-  <link rel="stylesheet" href="{{up_dir}}css/reset.css">
   <link rel="stylesheet" href="{{up_dir}}css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="{{up_dir}}css/jquery-ui.css">
-  <link rel="stylesheet" href="{{up_dir}}css/fonts.css">
   <link rel="stylesheet" href="{{up_dir}}css/main.css">
-  <link rel="stylesheet" href="{{up_dir}}css/default_styles.css">
-  <link rel="icon" href="http://electric-penza.ru/favicon.ico" type="image/x-icon">
+  {% if main %}{% else %}<link rel="stylesheet" href="{{up_dir}}css/default_styles.css">{% endif %}
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <title>Электромонтажные работы в городе Пенза</title>
   <!-- Google analytics counter -->
   <script>

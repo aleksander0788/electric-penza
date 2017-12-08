@@ -1,4 +1,6 @@
+{% set main = "main" %}
 {% extends "layouts/_layout.html" %}
+
 	{% block content %}
 
 	<div class="block-1 odd-block block-width">
@@ -136,6 +138,7 @@
 	 		</div>
 	 		<a name="call-master"></a>
 	 	</div>
+		<a name="stages-works"></a>
 	</div>
 	<div class="block-6 even-block block-width">
 		<div>
@@ -148,7 +151,6 @@
 				<button>Отправить</button>
 			</form>
 		</div>
-
 		<script>
 
 				$(function(){
@@ -167,15 +169,13 @@
 					});
 				});
 
-				$(function(){
-					$('.ui-front').click (function(){
-					console.log('прив');
-					// $('#ui-dialog').dialog('close');
-				});
-				})();
-
+				// $(function(){
+				// 	$('.ui-front').click (function(){
+				// 	console.log('прив');
+				// 	// $('#ui-dialog').dialog('close');
+				// });
+				// })();
 		</script>
-
 		<div class="container no-padding">
 			<div class="row">
 				<div class="col-xs-12"><h1>Этапы работ</h1></div>
@@ -277,7 +277,7 @@
 						<li><a href="#contacts">Контакты</a></li>
 					</ul>
 					<div class="vk">
-						<a href="https://vk.com/electric_penza"><img src="/images/vk-logo.png" alt="VK-logo"></a>
+						<a href="https://vk.com/electric_penza"><img src="images/vk-logo.png" alt="VK-logo"></a>
 						<a href="https://vk.com/electric_penza">мы в Вконтакте</a>
 					</div>
 				</div>
