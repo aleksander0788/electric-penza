@@ -218,6 +218,7 @@ header {
   background: #fff;
   opacity: 0.97;
   width: 100%;
+  height: 74px;
   z-index: 1; }
 
 /* ---navigation---*/
@@ -824,7 +825,7 @@ table {
 table td,
 table th {
   border: 2px #ccc solid;
-  padding: 4px;
+  padding: 10px 6px 10px;
   vertical-align: middle; }
 
 .table__prices {
@@ -836,7 +837,6 @@ table th {
 
 .table__col-4__row-n > :first-child,
 .table__col-3__row-n > :first-child {
-  /*color: red;*/
   padding: 0 8px 0;
   text-align: center; }
 
@@ -881,3 +881,61 @@ table th {
     font-size: 32px;
     text-transform: uppercase;
     font-weight: 400; }
+
+.content h2 {
+  margin-bottom: 20px;
+  text-align: center; }
+
+.content .pricelist {
+  width: 375px;
+  border-color: black; }
+  .content .pricelist a {
+    color: black; }
+
+.content__contacts {
+  text-align: right;
+  position: absolute;
+  right: 15px; }
+  .content__contacts p {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 4px; }
+
+.content__footer {
+  margin-top: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+  font-size: 24px; }
+  .content__footer a {
+    text-transform: none;
+    font-size: 18px; }
+
+.costs .cost-alert {
+  text-align: right;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 5px; }
+
+.costs table {
+  width: 100%;
+  margin-bottom: 35px; }
+  .costs table.shield-install tr:nth-child(3) td {
+    text-align: center; }
+  .costs table tr td:nth-child(3),
+  .costs table tr td:nth-child(4) {
+    text-align: center; }
+  .costs table.strobing tr td:nth-child(3), .costs table.cabling tr td:nth-child(3) {
+    width: 132px; }
+
+.pages .content__container > div {
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .pages .content__container > div h2 {
+    margin-bottom: 5px; }
+  .pages .content__container > div p {
+    margin-top: 15px; }
+  .pages .content__container > div h4 {
+    margin-top: 35px; }
+  .pages .content__container > div h4:last-child {
+    margin-top: 10px; }
