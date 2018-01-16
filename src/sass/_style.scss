@@ -31,6 +31,7 @@ header {
 	background: #fff;
 	opacity: 0.97;
 	width: 100%;
+	height: 74px;
 	z-index: 1;
 }
 
@@ -663,7 +664,7 @@ table {
 table td,
 table th  {
 	border: 2px #ccc solid;
-	padding: 4px;
+	padding: 10px 6px 10px;
 	vertical-align: middle;
 }
 .table__prices {
@@ -677,7 +678,6 @@ table th  {
 }
 .table__col-4__row-n > :first-child,
 .table__col-3__row-n > :first-child {
-	/*color: red;*/
 	padding: 0 8px 0;
 	text-align: center;
 }
@@ -697,8 +697,6 @@ table th  {
 		// margin-top: 63px;
 		.slick-slide {
 			text-align: center;
-
-
 			img {
 				height: auto;
 				width: 100%;
@@ -729,5 +727,83 @@ table th  {
 			font-size: 32px;
 			text-transform: uppercase;
 			font-weight: 400;
+		}
+	}
+	.content {
+		h2 {
+			margin-bottom: 20px;
+			text-align: center;
+		}
+		.pricelist {
+			width: 375px;
+			border-color: black;
+			a {
+				color: black;
+			}
+		}
+		&__contacts {
+			text-align: right;
+			position: absolute;
+			right: 15px;
+			p {
+				font-size: 14px;
+				color: #aaa;
+				margin-top: 4px;
+			}
+		}
+	}
+	.content__footer {
+		margin-top: 25px;
+		text-align: center;
+		text-transform: uppercase;
+		line-height: 1.5;
+		font-size: 24px;
+		a {
+			text-transform: none;
+			font-size: 18px;
+		}
+	}
+	.costs {
+		.cost-alert {
+			text-align: right;
+			font-size: 14px;
+			font-style: italic;
+			margin-bottom: 5px;
+		}
+		table {
+			width: 100%;
+			margin-bottom: 35px;
+			&.shield-install {
+				tr:nth-child(3) td {
+					text-align: center;
+				}
+			}
+			tr td:nth-child(3),
+			tr td:nth-child(4) {
+				text-align: center;
+			}
+			&.strobing,
+			&.cabling {
+				tr td:nth-child(3) {
+					width: 132px;
+					// padding-left: 10px;
+				}
+			}
+		}
+	}
+	.pages .content__container > div {
+		margin-top: 50px;
+		margin-bottom: 50px;
+		h2 {
+			margin-bottom: 5px;
+		}
+		p {
+			margin-top: 15px;
+		}
+		h4 {
+			margin-top: 35px;
+		}
+		h4:last-child {
+			margin-top: 10px;
 		}
 	}
