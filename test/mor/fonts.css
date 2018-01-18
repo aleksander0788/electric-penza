@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'Din Pro Light';
+	src: url(fonts/pfdintextcondpro-light_0-webfont.woff)
+}
+@font-face {
+	font-family: 'din_pro_thin';
+	src: url(fonts/pfdintextcondpro-thin_0-webfont.woff)
+}
+@font-face {
+	font-family: 'din_pro_thinital';
+	src: url(fonts/pfdintextcondpro-thinital_0-webfont.woff)
+}
+
