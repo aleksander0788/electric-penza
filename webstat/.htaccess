@@ -1,7 +1,0 @@
-AuthType Basic
-AuthName "/www/electric-penza.ru/webstat"
-AuthUserFile /var/www/vh86726/data/etc/34750595.passwd
-DirectoryIndex index.html
-<Limit GET POST>
-	require valid-user
-</Limit>
