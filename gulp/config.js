@@ -13,7 +13,7 @@ var config = {
         js           : 'src/js',
         img          : 'src/images',
         svg          : 'src/img/svg',
-        icons        : 'src/icons',
+        icons        : 'src/images/icons',
         // path to png sources for sprite:png task
         iconsPng     : 'src/icons',
         // path to svg sources for sprite:svg task
@@ -28,9 +28,12 @@ var config = {
         html : destPath,
         css  : destPath + '/css',
         js   : destPath + '/js',
-        img  : destPath + '/img',
+        img  : destPath + '/images',
         fonts: destPath + '/fonts',
         lib  : destPath + '/lib'
+    },
+    sass: {
+        outputStyle: 'expanded'
     }
 
 };
