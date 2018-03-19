@@ -52,7 +52,7 @@ gulp.task('sass', function () {
 //--------------------------------------------------------------
 
 gulp.task('img-copy', function () {
-	return gulp.src(config.src.img + '/*.{png,jpg,svg}')
+	return gulp.src(config.src.img + '/**/*.{png,jpg,svg}')
 		.pipe(imagemin({verbose: true},
 		{
 			interlaced: true,
@@ -76,7 +76,7 @@ gulp.task('font-copy', function () {
 //--------------------------------------------------------------
 
 gulp.task('js-copy', function () {
-	return gulp.src(config.src.js + '/*.js')
+	return gulp.src(config.src.js + '/**/*.js')
 		.pipe(gulp.dest(config.dest.js));
 });
 

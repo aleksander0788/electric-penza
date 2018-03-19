@@ -5,11 +5,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name='yandex-verification' content='4e26973d0c05f17f' />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="jquery-ui.min.js"></script>
-  <script src="{{up_dir}}js/callback.js"></script>
-  <script src="{{up_dir}}js/slick.min.js"></script>
-  <script src="{{up_dir}}js/main.js"></script>
   <link rel="stylesheet" href="{{up_dir}}css/bootstrap.css" type="text/css">
   <link rel="stylesheet" href="{{up_dir}}css/jquery-ui.css">
   <link rel="stylesheet" href="{{up_dir}}css/main.css">
@@ -36,9 +31,13 @@
       {% block content %}{% endblock %}
     <!-- END content -->
 
-    <!-- BEGIN scripts -->
-      {% block scripts %}{% endblock %}
+    <!-- BEGIN footer -->
     {% include "../partials/_footer.html" %}
-    <!-- END scripts -->
+    <!-- END footer -->
+
+    <!-- including scripts -->
+    {% include "partials/_scripts.html" %}
+    <!-- including scripts -->
+
   </body>
 </html>

@@ -1,5 +1,5 @@
 # Dependency directories
 node_modules/
-template/
+public/
 package-lock.json
 *.psd

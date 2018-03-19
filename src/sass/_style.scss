@@ -182,23 +182,25 @@ input {
 .phone_number_input {
 	border-color: #d94d62;
 }
-button {
-	display: block;
-	width: 250px;
-	height: 40px;
-	margin: auto;
-	margin-top: 5px;
-	background-color: #ff0000;
-	border-radius: 4px;
-	border: none;
-	color: white;
-	font-size: 22px !important;
-	font-weight: 500;
-	letter-spacing: 1px;
-	cursor: pointer;
-}
-button:hover {
-	background-color: #e20000;
+form.callback-send {
+	button {
+		display: block;
+		width: 250px;
+		height: 40px;
+		margin: auto;
+		margin-top: 5px;
+		background-color: #ff0000;
+		border-radius: 4px;
+		border: none;
+		color: white;
+		font-size: 22px !important;
+		font-weight: 500;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
+	button:hover {
+		background-color: #e20000;
+	}
 }
 .head_form {
 	text-align: center;
@@ -456,7 +458,7 @@ footer a {
 	border-radius: 3px;
 }
 .footer-form-button {
-	width: 100%;
+	width: 100% !important;
 	margin-top: 20px;
 }
 .footer-phone-number {
@@ -596,12 +598,12 @@ footer a {
 .pricelist {
 	width: 530px;
 	text-align: center;
-	margin: 15px auto 55px auto;
+	margin: 45px auto 45px auto;
 	padding: 5px 0 14px 0;
 	border: 3px solid white;
 	background-color: rgba(255, 255, 255, 0.15);
 	transition-property: box-shadow;
-    transition: cubic-bezier(0.07, 0.04, 0.62, 1.02) 0.3s;
+  transition: cubic-bezier(0.07, 0.04, 0.62, 1.02) 0.3s;
 
 }
 .pricelist a {
@@ -744,9 +746,9 @@ table th  {
 		&__contacts {
 			text-align: right;
 			position: absolute;
-			right: 15px;
+			right: calc(50% - 512px);
 			p {
-				font-size: 14px;
+				font-size: 15px;
 				color: #aaa;
 				margin-top: 4px;
 			}
@@ -807,3 +809,20 @@ table th  {
 			margin-top: 10px;
 		}
 	}
+
+// ---- gallery ----
+	.gallery {
+		&__list {
+			@include clr;
+		}
+		&__item {
+			width: 33.333%;
+			float: left;
+			padding: 0 15px 0;
+			margin-bottom: 40px;
+		}
+	}
+	.gallery-item {
+		background-color: #f6f2f2;
+	}
+// ---- end ----
